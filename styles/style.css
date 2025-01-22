@@ -1,4 +1,529 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
     margin: 0;
     padding: 0;
+    font-family: "Quicksand", serif;
 }
+
+.wrapper{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.headermain{
+    background: #f7f7f7;
+    padding: 25px 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header button{
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    width: 197px;
+    height: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    border: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h4{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+}
+.header nav ul {
+    display: flex;
+    gap: 0 16px;
+}
+.header nav ul li{
+    list-style: none;
+}
+.header nav ul li a{
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+.menu-icon{
+    display: none;
+}
+.header nav ul li:nth-last-child(1) a{
+    color: rgb(254, 163, 1);
+}
+.header nav ul li:nth-last-child(2) a{
+    color: rgb(1, 172, 253);
+}
+.header nav ul li:nth-last-child(3) a{
+    color: rgb(5, 212, 223);
+}
+.header nav ul li:nth-last-child(4) a{
+    color: rgb(93, 88, 239);
+}
+
+/* ==================== Baneer ================= */
+.banner-main{
+    background: #f7f7f7;
+    background-size: 100%;
+    display: flex;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text{
+    width: 56%;
+}
+.hero-text h1{
+    font-family: Quicksand;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    color: rgb(17, 17, 17);
+    margin: 0;
+}
+.hero-text h1 span{
+    color: rgb(254, 163, 1);
+    display: block;
+}
+.hero-text h1 label{
+    color: rgb(1, 172, 253);
+}
+.hero-text p{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 20px 0 30px;
+}
+.hero-text a{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    width: 197px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 47px;
+}
+
+
+/* ===================== curriculum ===================== */
+.curriculum{
+    background: #f7f7f7 ;
+    background-size: 100%;
+    padding: 60px 0;
+    background-image: url(../assets/bg.png);
+}
+.curriculum h2, .stories-section h2{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+    text-align: center;
+}
+
+.curriculum-container{
+    display: flex;
+    gap: 28px;
+}
+.curriculum-card{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card:nth-child(2){
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card:nth-child(3){
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculum-card:nth-child(2) a{
+    color: #F0AA00;
+}
+.curriculum-card:nth-child(3) a{
+    color: #8700FF;
+}
+.curriculum-card img{
+    height: 135px;
+}
+.curriculum-card h3{
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 24.52px;
+    font-weight: 700;
+    line-height: 30.65px;
+}
+.curriculum-card p{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 15.09px;
+    font-weight: 500;
+    line-height: 28.3px;
+}
+.curriculum-card a{
+    color: rgb(100, 200, 255);
+    font-family: Quicksand;
+    font-size: 15.09px;
+    font-weight: 700;
+    line-height: 28.3px;
+    text-decoration: none;
+}
+.curriculum-arrows{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0 0;
+}
+.curriculum-arrows .arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 56px;
+    text-align: center;
+}
+
+
+
+.stories-section{
+    padding: 60px 0;
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgb(247 247 247) 100%);
+}
+.stories-container{
+    display: flex;
+    gap: 20px;
+}
+.stories-container > div{
+    width: 50%;
+}
+.story-card{
+    border-radius: 16px;
+background: rgb(255, 255, 255);
+overflow: hidden;
+}
+.mobile{
+    display: none;
+}
+.story-card img{
+    width: 100%;
+}
+.story-content{
+    position: relative;
+    padding: 25px;
+}
+.story-date{
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    width: 174.51px;
+    height: 40px;
+    position: absolute;
+    left: 21px;
+    top: -27px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: capitalize;
+    display: inline-block;
+    text-align: center;
+}
+.story-date2{
+    background: #5D58F0;
+}
+.story-date3{
+    background: #95B226;
+}
+.story-content h4{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 15.34px;
+    font-weight: 700;
+    line-height: 28.76px;
+    text-align: left;
+    margin: 0;
+}
+.story-left .story-content h4{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.35px;
+}
+.story-left .story-content{
+    padding: 60px;
+}
+.story-left .story-content .story-date{
+    left: 55px;
+}
+.story-content p{
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.story-right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.story-right > .story-card{
+    width: 48%;
+}
+
+.view-all-button{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    width: 197px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    border: none;
+    margin: 40px auto 0;
+    display: block;
+}
+
+/* ============ footer ============= */
+footer{
+    background: #01ACFD;
+    padding: 80px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.footer-logo h3{
+    color: #fff;
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+}
+.footer-column p{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+}
+.footer-column h3{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
+line-height: 30px;
+}
+.footer-column ul {
+    padding: 0;
+}
+.footer-column ul li {
+    list-style: none;
+    padding: 7px 0;
+}
+.footer-column ul li a{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 25px;
+text-decoration: none;
+}
+
+.footer .footer-column:nth-child(1){
+    width: 45%;
+}
+.footer .footer-column:nth-child(1){
+    width: 25%;
+}
+.footer .footer-column:nth-child(1){
+    width: 30%;
+}
+
+
+@media (max-width: 1400px) { 
+    
+ }
+
+@media (max-width: 1200px) { 
+    
+ }
+
+@media (max-width: 992px) { 
+    
+ }
+
+@media (max-width: 768px) {
+    .header{
+        padding: 0 25px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .header nav ul, .header button, .curriculum-arrows, .story-left{
+        display: none;
+    }
+    .hero-container{
+        flex-wrap: wrap;
+    }
+    .hero-container>div{
+        width: 100%;
+    }
+    .headermain{
+        border-bottom: 1px solid #fea301;
+        padding: 15px 0;
+    }
+    .curriculum-container, .stories-container{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .banner-main{
+        padding: 30px 0 0;
+    }
+    .hero-container{
+        text-align: center;
+        padding: 0 30px;
+    }
+    .hero-container img{
+        width: 100%;
+    }
+    .hero-container .hero-text{
+        order: 2;
+    }
+    .hero-container .hero-img{
+        order: 1;
+    }
+
+    .hero-text h1{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    .hero-text p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        margin: 20px auto;
+        width: 90%;
+    }
+    .hero-text a{
+        width: 131px;
+        height: 42px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+    .curriculum h2, .stories-section h2{
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 33px;
+    }
+    .curriculum h2{
+        margin-bottom: 0;
+    }
+    .curriculum-card h3{
+        font-size: 16.6px;
+        font-weight: 700;
+        line-height: 20.75px;
+    }
+    .mobile{
+        display: block;
+    }
+    .stories-container > .story-right{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .story-right > .story-card {
+        width: 47%;
+    }
+    .story-date{
+        width: 103px;
+        height: 22px;
+        font-size: 9.13px;
+        font-weight: 500;
+        line-height: 21px;
+        top: -16px;
+    }
+    .story-content h4{
+        font-family: Quicksand;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 17.12px;
+    }
+    .view-all-button{
+        width: 150px;
+        height: 40px;
+        font-size: 17px;
+        margin: 10px auto 0;
+    }
+    .footer{
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .footer .footer-column{
+        width: 100% !important;
+    }
+    .curriculum{
+        padding: 60px 0 0;
+    }
+    .stories-section{
+        padding: 30px 0 45px;
+    }
+    footer{
+        padding: 15px 0 60px;
+    }
+}
+
+@media (max-width: 576px) { 
+    
+ }
